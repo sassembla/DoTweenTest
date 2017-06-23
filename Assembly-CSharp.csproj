@@ -48,8 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\TestCase\CascadingEffectSample.cs" />
      <Compile Include="Assets\TestCase\CompleteDoesFixPosition.cs" />
      <Compile Include="Assets\TestCase\KillDoesntFixPosition.cs" />
+     <Compile Include="Assets\TestCase\SetDoneBeforeCompleteSample.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity5.5.0p4/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

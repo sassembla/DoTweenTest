@@ -10,14 +10,14 @@ public class KillDoesntFixPosition : MonoBehaviour {
 	IEnumerator Start () {
 		var s = DOTween.Sequence();
 		
-		var endPos = new Vector3(0,100,0);
-		s.Append(transform.DOMove(endPos, 100.0f));
+		var endPos = 100f;
+		s.Append(transform.DOMoveY(endPos, 100.0f));
 
 		while (true) {
 			if (frame == 10) {
 				s.Kill();
-				Debug.Assert(transform.position != endPos, "not intended behaviour. position matched.");
-				Debug.Log("after killed pos:" + transform.position);
+				Debug.Assert(transform.position.y != endPos, "not intended behaviour. position matched.");
+				Debug.Log("after killed pos:" + transform.position.y);
 				yield break;
 			}
 			yield return null;
